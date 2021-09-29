@@ -1,11 +1,39 @@
 #top-bar {
     border: 1px solid green;
+    width: 100%;
+    display: flex;
+}
+
+#top-bar div {
+    margin-right: 10px;
 }
 
 header {
     border: 1px solid red;
+    justify-content: space-between;
+    display: flex;
 }
 
 nav {
     border: 1px solid purple;
+    display: flex;
+}
+
+nav div {
+    margin-right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 640px 1fr 1fr;
+    width: 100%;
+    grid-template-rows: 335px 335px;
+    grid-template-areas: 
+    "big story1 story2"
+    "big story3 story4"
+    ;
+}
+
+#big {
+    grid-area: big;
 }
